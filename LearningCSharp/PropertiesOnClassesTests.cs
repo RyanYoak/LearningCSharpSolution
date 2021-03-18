@@ -35,5 +35,10 @@ namespace LearningCSharp
         public string LastName { get; set; } // Same as all above, but the compiler does it for you
 
         public decimal CreditLimit { get; private set; } = 5000;
+
+        public string GetInfo()
+        {
+            return $"This is {FirstName} {LastName}, and their CL is {CreditLimit:c}.";
+        }
     }
 }
