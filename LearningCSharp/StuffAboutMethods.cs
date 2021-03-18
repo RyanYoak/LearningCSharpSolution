@@ -59,6 +59,17 @@ namespace LearningCSharp
             Assert.Equal(9, x);
         }
 
+        [Fact]
+        public void NullableTypes()
+        {
+            DateTime? birthday = null;
+
+            if (birthday.HasValue)
+            {
+                
+            }
+        }
+
         public string FormatName(string first, string last, out int x)
         {
             var format = $"{last}, {first}";
